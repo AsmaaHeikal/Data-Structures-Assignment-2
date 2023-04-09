@@ -22,11 +22,12 @@ public:
     T pop() {
         T el;
         if (stck.size() > 0) {
-            el = stck.top();
+            el = stck.back();
             stck.pop_back();
             sz--;
+            return el;
         } else cout << "Cannot pop since the stack is empty" << endl;
-        return el;
+        
     }
 
     int stackSize() {
@@ -38,7 +39,7 @@ public:
     }
 
     bool isEmpty() {
-        if (stck.stackSize() == 0) {
+        if (stck.empty()) {
             return true;
         } else return false;
     }
