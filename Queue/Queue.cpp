@@ -11,7 +11,6 @@ private:
     list<T> lst;
     int sz;
 public:
-    queue() {};
 
 
     void clear() {
