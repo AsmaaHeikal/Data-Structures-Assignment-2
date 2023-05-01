@@ -4,7 +4,7 @@
 using namespace std;
 
 template<class T>
-class stack {
+class Stack {
 private:
     vector<T> stck;
     int sz = 0;
