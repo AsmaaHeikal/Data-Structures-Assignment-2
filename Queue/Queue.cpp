@@ -3,11 +3,10 @@
 //
 #include <iostream>
 #include <list>
-//#include "queue.h"
 using namespace std;
 
 template<class T>
-class queue {
+class Queue {
 private:
     list<T> lst;
     int sz;
